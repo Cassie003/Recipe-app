@@ -1,0 +1,128 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+body{
+    font-weight: 300;
+    font-size: 1.05em;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05em
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main-wrapper{
+    min-height: 100vh;
+}
+.meal-wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:2px;
+    background: #fff;
+    text-align: center;
+}
+.meal-search{
+    margin:2px 0;
+}
+.meal-search-box{
+    display:flex;
+    align-items: stretch;
+}
+.meal-box{
+    flex-basis: 50%
+}
+.search-content{
+    padding:0px 1px;
+    font-family: inherit;
+    font-size:1.1rem;
+    outline: 0;
+    border:1px solid #000; 
+    color: #000; 
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius:2rem;  
+}
+.search-content::placeholder{
+    color:gray;
+}
+.search-btn{
+    width:55px;
+    height:55px;
+    color:#fff;
+    border:none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.search-btn:hover{
+    background: #eee;
+}
+.meal-result{
+    margin-top:4px;
+
+}#meal{
+    margin:2.4px 0px;
+}
+.meal-item{
+    border-radius: 1rem;
+    overflow:hidden;
+    margin:2px 0px;
+}
+.meal-img{
+    width:100%;
+    display:block;
+    padding:4px;
+}
+.meal-name{
+    padding : 1.5rem 0.5rem;
+}
+.meal-name h3{
+    font-size:1.4rem;
+    margin-bottom: 4px;
+}
+.recipe-btn{
+    text-decoration: none;
+    color: #fff;
+    background: tomato;
+    font-weight:500;
+    font-size:1.1rem ;
+    padding: 0.75rem 0;
+    width:175px;
+    margin-top: 1rem auto;
+    border-radius: 2rem;
+    transition: all  0.4s linear;
+}
+@media screen and (min-width:600px){
+    .meal-search-box{
+        width: 540px;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+}
+
+@media screen and (min-width:768px){
+    #meal{
+        display:flex; 
+        flex-basis: 50%;
+    }
+    .meal-item{
+        margin:0;
+    }
+}
+@media screen and (min-width:992px){
+    #meal{
+    flex-basis: 25%;
+    }
+}
+
