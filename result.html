@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="./img/favicon.png" rel="icon">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Foods</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./index.html"></a>
+        </div>
+        <div class="main">
+            <div class="main-content">
+                
+                <p class="content-heading">Search for recipe</p>
+                <input type="text" id="foodsearch"  placeholder="Search.." >
+                <p class="content-heading">Select your country of choice </p>
+                   
+                    <div class="cta" onclick="buttonRead()">
+                        <p>DISCOVER</p>
+                    </div>
+                    <p id="display">
+                    </p>
+                </div>
+               
+                <div class="meal-details">
+                    <!-- recipe close btn  -->
+                    <button type = "button" class ="btn recipe-close-btn" id ="recipe-close-btn">
+                        <i class = "fa fa-times"></i>
+                    </button>
+
+                    <!-- meal-content -->
+                    <div class="meal-details-content">
+                        <h2 class = "recipe-title">Meals Name Here</h2>
+                        <p class  = "recipe-category">Category Name</p>
+                        <div class="recipe-instructions">
+                            <h3>Instructions:</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Quod dicta modi necessitatibus consectetur quos. Reiciendis quod, minus beatae architecto aspernatur sint
+                                hic quas nihil quasi saepe nisi ad temporibus dolore necessitatibus ea tempora quo placeat in perferendis
+                                molestiae iure molestias ipsa recusandae? 
+                                Labore, quibusdam ratione et cum numquam quod vero.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore necessitatibus reiciendis eligendi ab quasi,
+                               cupiditate facere dolores deleniti neque.
+                            </p>
+                        </div>
+                        <div class="recipe-meal-img">
+                            <img src = "food.jpg" alt = "">
+                        </div>
+                        <div class="recipe-link">
+                            <a href = "#" target="_blank">Watch a video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+    </html> 

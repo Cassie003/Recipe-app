@@ -1,17 +1,30 @@
-const searchBtn = document.getElementById('search-btn');
-const mealList = document.getElementById('meal');
-const mealDetailContent = document.querySelector('.meal-details-content');
-const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const foodName = ['Nigerian','American','Chinese','Canadian','Kenyan','Ugandan'];
 
-searchBtn.addEventListener ('click', getMealList);
+function getFood () {
+    let foodInput = document.getElementById('foodsearch').value;
+    console.log(foodInput);
 
-function getMealList() {
-    let searchInputTxt = document.getElementById('.search-input')
-    console.log(searchInputTxt);
-    fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
-    .then(response => response.json())
-    .then(data =>{
-        console.log(data);
-    })
+    food = document.querySelectorAll('.meal-item');
+    details = document.querySelectorAll('.meal-details');
 
+    //let food = ""
+    //for (let i = 0; i < food.length; i++) {
+        //food += foodInput[i];
+   // }
+
+
+    if(foodInput == ''){
+        alert('Please enter ');
+    } else  ( foodInput == true && details ==true) {
+        loadMeals();
+
+        function loadMeals (){
+            fetch("https://www.themealdb.com/api/json/v1/1/list.php?a=list")
+            .then(response => response.json())
+            .then(data =>{
+                console.log(data);
+            });
+               
+        }
+    }
 }
